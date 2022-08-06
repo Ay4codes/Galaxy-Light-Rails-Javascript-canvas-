@@ -84,7 +84,7 @@ function animate() {
   c.restore()
   
   radians += 0.005
-
+  // Galaxy Mouse Down Transition
   if(mouseDown && alpha >= 0.03) {
     alpha -= 0.01
   } else if (!mouseDown && alpha < 1) {
@@ -94,22 +94,3 @@ function animate() {
 
 init()
 animate()
-
-
-
-
-
-
-
-// Home page Type Writer
-const myText = document.getElementById('mainMsg');
-
-var typewriter = new Typewriter(myText, {
-    loop: true
-});
-typewriter.typeString('This is a Galaxy light rails canvas effect')
-.pauseFor(2500)
-.deleteAll()
-.typeString("Click down on the page for more effect")
-.pauseFor(2500)
-.start();
